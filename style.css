@@ -375,3 +375,67 @@ ul li a:hover {
     margin-bottom: auto;
   }
 }
+
+
+
+
+
+
+.videos {
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: calc(50% - 30px);
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+}
+
+.video iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+
+.video-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.video-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.video-info {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .videos {
+    padding: 10px;
+  }
+  
+  .video {
+    width: calc(100% - 20px);
+  }
+  
+  .video iframe {
+    height: 200px;
+  }
+}
